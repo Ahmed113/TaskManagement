@@ -16,7 +16,9 @@ The application is compatible with both Android mobile devices and Windows deskt
 
 ## Installation
 The application is built using Flutter version 3.22.0.
+
 - For Android mobile devices:
+
   1- Clone the repository to your development environment, such as Visual Studio Code or Android Studio.
 
   2- Execute the following command to fetch the dependencies:
