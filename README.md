@@ -5,9 +5,13 @@ A Flutter app for task management.
 ## Getting Started
 
 This project is a starting point for a Flutter application.
+
 The Task Management app is built with a clean architecture. It's a responsive app with the Flutter screenUtil package.
+
 Hive is the local storage used for our app, and Firestore is used for remote storage.
+
 bloc is the used state management.
+
 The application is compatible with both Android mobile devices and Windows desktop platforms.
 
 ## Installation
