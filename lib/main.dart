@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:hive_flutter/adapters.dart';
+import 'package:task_management/core/resources/constants.dart';
 import 'package:task_management/data/dataSources/local/local_storage.dart';
 import 'package:task_management/data/dataSources/remote/firebase_service.dart';
 import 'package:task_management/data/models/task_model.dart';
@@ -19,7 +20,7 @@ import 'firebase_options.dart';
 void main() async{
   await Hive.initFlutter();
   Hive.registerAdapter(TaskModelAdapter());
-  await Hive.openBox<TaskModel>('tasks_model_box');
+  await Hive.openBox<TaskModel>(Constants.tasksBox);
 
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp(

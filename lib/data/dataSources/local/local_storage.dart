@@ -1,10 +1,11 @@
 import 'package:hive/hive.dart';
+import 'package:task_management/core/resources/constants.dart';
 import 'package:task_management/domain/entities/task_entity.dart';
 
 import '../../models/task_model.dart';
 
 class LocalStorage {
-  var taskBox = Hive.box<TaskModel>('tasks_model_box');
+  var taskBox = Hive.box<TaskModel>(Constants.tasksBox);
 
   Future<void> storeTaskLocally(TaskEntity task) async {
     TaskModel taskModel = TaskModel(taskTitle: task.taskTitle, dueDate: task.dueDate, isDone: task.isDone, taskId: task.taskId);
