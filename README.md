@@ -39,6 +39,22 @@ The application is built using Flutter version 3.22.0.
 
     `flutter run -d windows`
 
-  > **Note:** Ensure that you have the latest version of Visual Studio Code installed, with desktop development support for C++ enabled. Additionally, install the C++/CLI build tools within Visual Studio Code.
+  > **Note:** - Ensure that you have the latest version of Visual Studio Code installed, with desktop development support for C++ enabled. Additionally, install the C++/CLI build tools within Visual Studio Code.
+
+              - If you encounter an error while building the application, try executing the following commands:
+
+                1- Navigate to the Windows directory:
+
+                 `cd windows`
+                  
+                2- Remove the CMake cache:
+
+                 `rm -f CMakeCache.txt`
+
+                3- Remove the CMake files:
+
+                 `rm -rf CMakeFiles/`
+
+             After executing these commands, try rebuilding the application.
   
   
