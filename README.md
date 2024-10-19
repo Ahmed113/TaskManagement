@@ -14,9 +14,13 @@ The application is compatible with both Android mobile devices and Windows deskt
 The application is built using Flutter version 3.22.0.
 - For Android mobile devices:
   1- Clone the repository to your development environment, such as Visual Studio Code or Android Studio.
+
   2- Execute the following command to fetch the dependencies:
+
     `flutter pub get`
+
   3- Build the application in debug mode by running:
+
     `flutter build apk --debug`
 
 - For Windows desktop platforms:
